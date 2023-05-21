@@ -58,7 +58,7 @@
 	
 		#logo h1
 		{
-			color: rgba(64,64,64,.8);
+			color: rgba(48,48,48,.8);
 		}
 	
 		#logo h1 a
@@ -78,7 +78,7 @@
 			padding-top: 1em;
 			letter-spacing: 1px;
 			font-size: 1.2em;
-			color: rgba(64,64,64,.8);
+			color: rgba(48,48,48,.8);
 		}			
 			
 
@@ -110,23 +110,24 @@
 				text-decoration: none;
 				font-weight: 200;
 				font-size: 1em;
+				font-weight: 500;
 				outline: 0;
-				color: rgba(64,64,64,.8);
+				color: rgba(48,48,48,.8);
 			}
 
 
 			#nav > ul > li > a:hover
 			{
-				color: rgba(64,64,64,.8);
+				color: rgba(48,48,48,.8);
 			}
 
 			#nav li.active a
 			{
 				background: none;
-				border-radius: 15px;
+				border-radius: 8px;
 				border: 2px solid;
-				border-color: rgba(64,64,64,.5);
-				color: rgba(64,64,64,.8);
+				border-color: rgba(48,48,48,.5);
+				color: rgba(48,48,48,0.8);
 			}
 
 			#nav > ul > li > ul

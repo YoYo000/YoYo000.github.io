@@ -293,14 +293,19 @@
 		position: relative;
 		background: #2a2f27 url(../images/banner.jpg) no-repeat;
 		background-size: cover;
+		height: 400px; 
 	}
 
 	#logo
 	{
+		position: relative;
+		top: -60px;
 	}
 	
 	#nav
 	{
+		position: relative;
+		top: -60px;
 	}
 
 		#nav ul
