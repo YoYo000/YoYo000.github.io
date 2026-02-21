@@ -55,43 +55,25 @@
 					
 					<!-- Content -->
 					<div id="content" class="12u skel-cell-important">
-						<section>
+						<section id="pub-list">
 
-							<p><font size="5"><b>Publications</b></font> </p>
+							<p><font size="5"><b>Publications</b></font> &nbsp;&nbsp; <span id="pub-filters"><font size="3">(<a href="#" class="pub-filter-link active" data-filter="featured">Selected</a> | 
+								<a href="#" class="pub-filter-link" data-filter="all">All</a>)</font></span></p>
 
-
-							<p><font size="3">Also find my full publication list at <a href="https://scholar.google.com/citations?user=MGxaDVEAAAAJ&hl=en", style="color: rgb(0, 128, 255); text-decoration: none">Google Scholar</a>.</font></p>
-							<br/>
+							<p><font size="3">Also find my full publication list at <a href="https://scholar.google.com/citations?user=MGxaDVEAAAAJ&hl=en" style="color: rgb(0, 128, 255); text-decoration: none">Google Scholar</a>.</font></p>
+							<style>
+								.pub-filter-link { color: rgb(0, 128, 255); text-decoration: none; cursor: pointer; }
+								.pub-filter-link:hover { text-decoration: underline; }
+								#content a:hover { text-decoration: underline !important; }
+								.pub-entry.hidden { display: none !important; }
+								.pub-year.hidden { display: none !important; }
+							</style>
+							<br/><br/>
 
 							
-							<font size="4">Preprint</font><br/><br/>
+							<font size="4" class="pub-year">Preprint</font><br/><br/>
 							
-
-							<div>
-								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/textrix.png" height="85" width="180" loading="lazy"></div>
-								<div><font size="3"><b>TEXTRIX: Latent Attribute Grid for Native Texture Generation and Beyond</b> 
-									[<a href="https://arxiv.org/abs/2512.02993", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
-									[<a href="https://www.neural4d.com/research-page/textrix", style="color: rgb(0, 128, 255); text-decoration: none">project</a>] 
-								</font></div>
-								<span><font size="3"> Yifei Zeng*, Yajie Bao*, Jiachen Qian, Shuang Wu, Youtian Lin, Hao Zhu, Buyu Li, Feihu Zhang, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
-								</font></span>
-								<div><span><font size="3">arXiv preprint 2512.02993</font></span> <span></span></div>
-							</div><br/><br/>
-
-							<div>
-								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/spatialvid.png" height="95" width="180" loading="lazy"></div>
-								<div><font size="3"><b>SpatialVID: A Large-Scale Video Dataset with Spatial Annotations</b> 
-									[<a href="https://arxiv.org/abs/2509.09676", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
-									[<a href="https://nju-3dv.github.io/projects/SpatialVID/", style="color: rgb(0, 128, 255); text-decoration: none">project</a>] 
-									[<a href="https://github.com/NJU-3DV/spatialVID", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] 
-									[<a href="https://huggingface.co/SpatialVID", style="color: rgb(0, 128, 255); text-decoration: none">dataset</a>] 
-								</font></div>
-								<span><font size="3"> Jiahao Wang*, Yufeng Yuan*, Rujie Zheng*, Youtian Lin, Jian Gao, Lin-Zhuo Chen, Yajie Bao, Yi Zhang, Chang Zeng, Yanxi Zhou, Xiaoxiao Long, Hao Zhu, Zhaoxiang Zhang, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
-								</font></span>
-								<div><span><font size="3">arXiv preprint 2505.17412</font></span> <span></span></div>
-							</div><br/><br/>
-
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/lingbot-world.png" height="95" width="180" loading="lazy"></div>
 								<div><font size="3"><b>LingBot-World: Advancing Open-source World Models</b> 
 									[<a href="https://arxiv.org/abs/2601.20540", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -101,45 +83,103 @@
 								<span><font size="3"> Robbyant Team, Zelin Gao, Qiuyu Wang, Yanhong Zeng, Jiapeng Zhu, Ka Leong Cheng, Yixuan Li, Hanlin Wang, Yinghao Xu, Shuailei Ma, Yihang Chen, Jie Liu, Yansong Cheng, <b>Yao Yao</b>, Jiayi Zhu, Yihao Meng, Kecheng Zheng, Qingyan Bai, Jingye Chen, Zehong Shen, Yue Yu, Xing Zhu, Yujun Shen, Hao Ouyang
 								</font></span>
 								<div><span><font size="3">arXiv preprint 2601.20540</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							
+							<div class="pub-entry"><div class="pub-item">
+								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/denoise2track.png" height="95" width="180" loading="lazy"></div>
+								<div><font size="3"><b>Denoise to Track: Harnessing Video Diffusion Priors for Robust Correspondence</b> 
+									[<a href="https://arxiv.org/abs/2512.04619" style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
+								</font></div>
+								<span><font size="3"> Tianyu Yuan, Yuanbo Yang, Lin-Zhuo Chen, <b>Yao Yao</b><sup>†</sup>, Zhuzhong Qian<sup>†</sup>
+								</font></span>
+								<div><span><font size="3">arXiv preprint 2512.04619</font></span> <span></span></div>
+							</div><br/><br/></div>
 
-							<font size="4">2026</font><br/><br/>
 
-							<div>
+
+							<font size="4" class="pub-year">2026</font><br/><br/>
+
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
+								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/textrix.png" height="85" width="180" loading="lazy"></div>
+								<div><font size="3"><b>TEXTRIX: Latent Attribute Grid for Native Texture Generation and Beyond</b> 
+									[<a href="https://arxiv.org/abs/2512.02993" style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
+									[<a href="https://www.neural4d.com/research-page/textrix" style="color: rgb(0, 128, 255); text-decoration: none">project</a>] 
+								</font></div>
+								<span><font size="3"> Yifei Zeng*, Yajie Bao*, Jiachen Qian, Shuang Wu, Youtian Lin, Hao Zhu, Buyu Li, Feihu Zhang, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
+								</font></span>
+								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2026</font></span> <span></span></div>
+							</div><br/><br/></div>
+
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
+								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/spatialvid.png" height="95" width="180" loading="lazy"></div>
+								<div><font size="3"><b>SpatialVID: A Large-Scale Video Dataset with Spatial Annotations</b> 
+									[<a href="https://arxiv.org/abs/2509.09676" style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
+									[<a href="https://nju-3dv.github.io/projects/SpatialVID/" style="color: rgb(0, 128, 255); text-decoration: none">project</a>] 
+									[<a href="https://github.com/NJU-3DV/spatialVID" style="color: rgb(0, 128, 255); text-decoration: none">code</a>] 
+									[<a href="https://huggingface.co/SpatialVID" style="color: rgb(0, 128, 255); text-decoration: none">dataset</a>] 
+								</font></div>
+								<span><font size="3"> Jiahao Wang*, Yufeng Yuan*, Rujie Zheng*, Youtian Lin, Jian Gao, Lin-Zhuo Chen, Yajie Bao, Yi Zhang, Chang Zeng, Yanxi Zhou, Xiaoxiao Long, Hao Zhu, Zhaoxiang Zhang, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
+								</font></span>
+								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2026</font></span> <span></span></div>
+							</div><br/><br/></div>
+
+							<div class="pub-entry"><div class="pub-item">
+								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/litevggt.png" height="90" width="180" loading="lazy"></div>
+								<div><font size="3"><b>LiteVGGT: Boosting Vanilla VGGT via Geometry-aware Cached Token Merging</b> 
+									[<a href="https://arxiv.org/abs/2512.04939" style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
+									[<a href="https://garlicba.github.io/LiteVGGT/" style="color: rgb(0, 128, 255); text-decoration: none">project</a>] 
+									[<a href="https://github.com/GarlicBa/LiteVGGT-repo" style="color: rgb(0, 128, 255); text-decoration: none">code</a>] 
+								</font></div>
+								<span><font size="3"> Zhijian Shu, Cheng Lin, Tao Xie, Wei Yin, Ben Li, Zhiyuan Pu, Weize Li, <b>Yao Yao</b>, Xun Cao, Xiaoyang Guo, Xiao-Xiao Long<sup><span style="font-family:Wingdings">*</span></sup>
+								</font></span>
+								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2026</font></span> <span></span></div>
+							</div><br/><br/></div>
+
+							<div class="pub-entry"><div class="pub-item">
+								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/pressure2motion.png" height="90" width="180" loading="lazy"></div>
+								<div><font size="3"><b>Pressure2Motion: Hierarchical Human Motion Reconstruction from Ground Pressure with Text Guidance</b> 
+									[<a href="https://arxiv.org/abs/2511.05038" style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
+								</font></div>
+								<span><font size="3"> Zhengxuan Li, Qinhui Yang, Yiyu Zhuang, Chuan Guo, Xinxin Zuo, Xiaoxiao Long, <b>Yao Yao</b>, Xun Cao, Qiu Shen, Hao Zhu
+								</font></span>
+								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2026</font></span> <span></span></div>
+							</div><br/><br/></div>
+
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/comgs.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>ComGS: Efficient 3D Object-Scene Composition via Surface Octahedral Probes</b> 
-									[<a href="https://arxiv.org/abs/2510.07729", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
-									[<a href="https://nju-3dv.github.io/projects/fds/", style="color: rgb(0, 128, 255); text-decoration: none">project</a>] </font></div>
+									[<a href="https://arxiv.org/abs/2510.07729" style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
+									[<a href="https://nju-3dv.github.io/projects/ComGS/" style="color: rgb(0, 128, 255); text-decoration: none">project</a>] </font></div>
 								<span><font size="3"> Jian Gao*, Mengqi Yuan*, Yifei Zeng, Chang Zeng, Zhihao Li, Zhenyu Chen, Weichao Qiu, Xiao-Xiao Long, Hao Zhu, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup></font></span>
 								<div><span><font size="3">International Conference on Learning Representations (<b>ICLR</b>) 2026</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 							
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/animi-ready.png" height="85" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Anime-Ready: Controllable 3D Anime Character Generation with Body-Aligned Component-Wise Garment Modeling</b> 
-									[<a href="https://openreview.net/forum?id=BRoAjhYWoQ", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>] </font></div>
+									[<a href="https://openreview.net/forum?id=BRoAjhYWoQ" style="color: rgb(0, 128, 255); text-decoration: none">paper</a>] </font></div>
 								<span><font size="3"> Jiachen Qian, Hongye Yang, Youtian Lin, Tianhao Zhao, Hengshuang Zhao, <b>Yao Yao</b>, Feihu Zhang
+								</font></span>
 								<div><span><font size="3">International Conference on Learning Representations (<b>ICLR</b>) 2026</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
 
 
 
-							<font size="4">2025</font><br/><br/>
+							<font size="4" class="pub-year">2025</font><br/><br/>
 
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/slingbag.png" height="90" width="180" loading="lazy"></div>
-								<div><font size="3"><b>SlingBAG: Sliding Ball Adaptive Growth Algorithm with Differentiable Radiation Enables Super-efficient Iterative 3D Photoacoustic Image Reconstruction</b> 
-									[<a href="https://arxiv.org/abs/2407.11781", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]</div>
+								<div><font size="3"><b>SlingBAG: point cloud-based iterative algorithm for large-scale 3D photoacoustic imaging
+								</b> 
+									[<a href="https://www.nature.com/articles/s41467-025-66855-w", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]</div>
 								<span><font size="3"> Shuang Li*, Yibing Wang*, Jian Gao*, Chulhong Kim, Seongwook Choi, Yu Zhang, Qian Chen, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Changhui Li<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">Nature Communications 2025</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/direct3d-s2.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Direct3D‑S2: Gigascale 3D Generation Made Easy with Spatial Sparse Attention</b> 
 									[<a href="https://arxiv.org/abs/2505.17412", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -150,9 +190,9 @@
 								<span><font size="3"> Shuang Wu*, Youtian Lin*, Feihu Zhang, Yifei Zeng, Yikang Yang, Yajie Bao, Jiachen Qian, Siyu Zhu, Philip Torr, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">Conference on Neural Information Processing Systems (<b>NeurIPS</b>) 2025 </font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/matrix3d.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Matrix3D: Large Photogrammetry Model All-in-One</b> 
 									[<a href="https://arxiv.org/pdf/2502.07685", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -160,9 +200,9 @@
 								<span><font size="3"> Yuanxun Lu*, Jingyang Zhang*, Tian Fang, Jean-Daniel Nahmias, Yanghai Tsin, Long Quan, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Shiwei Li
 								</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2025</font></span> <span>(<font size="4", color="#FF0000">Highlight</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 							
-							<div>
+							<div class="pub-entry" data-featured="true"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/mani-gs.png" height="95" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Mani-GS: Gaussian Splatting Manipulation with Triangular Mesh</b> 
 									[<a href="https://arxiv.org/abs/2405.17811", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -170,9 +210,9 @@
 								<span><font size="3"> Xiangjun Gao*, Xiaoyu Li*, Yiyu Zhuang, Qi Zhang, Wenbo Hu, Chaopeng Zhang<sup><span style="font-family:Wingdings">*</span></sup>, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Ying Shan, Long Quan
 								</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2025</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/fate.png" height="85" width="180" loading="lazy"></div>
 								<div><font size="3"><b>FATE: Full-head Gaussian Avatar with Textural Editing from Monocular Video</b> 
 									[<a href="https://arxiv.org/pdf/2411.15604", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -180,18 +220,18 @@
 								<span><font size="3"> Jiawei Zhang, Zijian Wu, Zhiyang Liang, Yicheng Gong, Dongfang Hu, <b>Yao Yao</b>, Xun Cao, Hao Zhu<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2025</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry" data-featured="true"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/fds.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Flow Distillation Sampling: Regularizing 3D Gaussians with Pre-trained Matching Priors</b> 
 									[<a href="https://arxiv.org/abs/2502.07615", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://nju-3dv.github.io/projects/fds/", style="color: rgb(0, 128, 255); text-decoration: none">project</a>] </font></div>
 								<span><font size="3"> Lin-Zhuo Chen*, Kangjie Liu*, Youtian Lin, Zhihao Li, Siyu Zhu, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup></font></span>
 								<div><span><font size="3">International Conference on Learning Representations (<b>ICLR</b>) 2025</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/hallo2.png" height="105" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Hallo2: Long-Duration and High-Resolution Audio-driven Portrait Image Animation</b> 
 									[<a href="https://arxiv.org/abs/2410.07718", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -199,40 +239,40 @@
 								<span><font size="3"> Jiahao Cui, Hui Li, <b>Yao Yao</b>, Hao Zhu, Hanlin Shang, Kaihui Cheng, Hang Zhou, Siyu Zhu<sup><span style="font-family:Wingdings">*</span></sup>, Jingdong Wang
 								</font></span>
 								<div><span><font size="3">International Conference on Learning Representations (<b>ICLR</b>) 2025</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/4dprotein.png" height="70" width="180" loading="lazy"></div>
 								<div><font size="3"><b>4D Diffusion for Dynamic Protein Structure Prediction with Reference Guided Motion Alignment</b> 
 									[<a href="https://arxiv.org/abs/2408.12419", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]</div>
 								<span><font size="3"> Kaihui Cheng*, Ce Liu*, Qingkun Su, Jun Wang, Liwei Zhang, Yining Tang, <b>Yao Yao</b>, Siyu Zhu<sup><span style="font-family:Wingdings">*</span></sup>, Yuan Qi<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">AAAI Conference on Artificial Intelligence (<b>AAAI</b>) 2025 </font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
 							
 
-							<font size="4">2024</font><br/><br/>
+							<font size="4" class="pub-year">2024</font><br/><br/>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/4dslingbag.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>4D SlingBAG: Spatial-temporal Coupled Gaussian Ball for Large-scale Dynamic 3D Photoacoustic Iterative Reconstruction</b> 
 									[<a href="https://www.arxiv.org/abs/2412.03898", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]</div>
 								<span><font size="3"> Shuang Li*, Yibing Wang*, Jian Gao*, Chulhong Kim, Seongwook Choi, Yu Zhang, Qian Chen, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Changhui Li<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">arXiv preprint 2412.03898</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 							
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/3dgs-review.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Advances in Differentiable Rendering Based on Three-Dimensional Gaussian Splatting (Invited)</b> 
 									[<a href="https://opticsjournal.net/Articles/OJa0fe8da6b896b20a/FullText", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>] </font></div>
 								<span><font size="3"> Jian Gao, Linzhuo Chen, Qiu Shen, Xun Cao, Yao Yao
 								</font></span>
 								<div><span><font size="3">Laser & Optoelectronics Progress, 2024, 61(16): 1611010</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/direct3d.png" height="95" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Direct3D: Scalable Image-to-3D Generation via 3D Latent Diffusion Transformer</b> 
 									[<a href="https://arxiv.org/abs/2405.14832", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -240,9 +280,9 @@
 								<span><font size="3"> Shuang Wu*, Youtian Lin*, Feihu Zhang, Yifei Zeng, Jingxi Xu, Philip Torr, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">Conference on Neural Information Processing Systems (<b>NeurIPS</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/brdf-3dgs.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Relightable 3D Gaussian: Real-time Point Cloud Relighting with BRDF Decomposition and Ray Tracing</b> 
 									[<a href="https://arxiv.org/abs/2311.16043", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -250,9 +290,9 @@
 								<span><font size="3"> Jian Gao*, Chun Gu*, Youtian Lin, Hao Zhu, Xun Cao, Li Zhang<sup><span style="font-family:Wingdings">*</span></sup>, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">European Conference on Computer Vision (<b>ECCV</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry" data-featured="true"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/stag4d.png" height="65" width="180" loading="lazy"></div>
 								<div><font size="3"><b>STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians</b> 
 									[<a href="https://arxiv.org/abs/2403.14939", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -260,9 +300,9 @@
 								<span><font size="3"> Yifei Zeng*, Yanqin Jiang*, Siyu Zhu, Yuanxun Lu, Youtian Lin, Hao Zhu, Weiming Hu, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">European Conference on Computer Vision (<b>ECCV</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 							
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/champ.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Champ: Controllable and Consistent Human Image Animation with 3D Parametric Guidance</b> 
 									[<a href="https://arxiv.org/abs/2403.14781", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -270,9 +310,9 @@
 								<span><font size="3"> Shenhao Zhu*, Junming Leo Chen*, Zuozhuo Dai, Yinghui Xu, Xun Cao, <b>Yao Yao</b>, Hao Zhu<sup><span style="font-family:Wingdings">*</span></sup>, Siyu Zhu<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">European Conference on Computer Vision (<b>ECCV</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/emo3d.png" height="75" width="180" loading="lazy"></div>
 								<div><font size="3"><b>EmoTalk3D: High-Fidelity Free-View Synthesis of Emotional 3D Talking Head</b> 
 									[<a href="https://arxiv.org/abs/2408.00297", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -280,9 +320,9 @@
 								<span><font size="3">Qianyun He, Xinya Ji, Yicheng Gong, Yuanxun Lu, Zhengyu Diao, Linjia Huang, <b>Yao Yao</b>, Siyu Zhu, Zhan Ma, Songcen Xu, Xiaofei Wu, Zixiao Zhang, Xun Cao, Hao Zhu<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">European Conference on Computer Vision (<b>ECCV</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/head360.png" height="75" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Head360: Learning a Parametric 3D Full-Head for Free-View Synthesis in 360°</b> 
 									[<a href="https://arxiv.org/abs/2408.00296", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -290,9 +330,9 @@
 								<span><font size="3">Yuxiao He, Yiyu Zhuang, Yanwen Wang, <b>Yao Yao</b>, Siyu Zhu, Xiaoyu Li, Qi Zhang, Xun Cao, Hao Zhu<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">European Conference on Computer Vision (<b>ECCV</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 							
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/hallo.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Hallo: Hierarchical Audio-Driven Visual Synthesis for Portrait Image Animation</b> 
 									[<a href="https://arxiv.org/abs/2406.08801", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -300,9 +340,9 @@
 								<span><font size="3"> Mingwang Xu*, Hui Li*, Qingkun Su*, Hanlin Shang, Liwei Zhang, Ce Liu, Jingdong Wang, <b>Yao Yao</b>, Siyu Zhu<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">arXiv preprint 2406.08801</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/stereorisk.png" height="85" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Stereo Risk: A Continuous Modeling Approach to Stereo Matching</b>  
 									[<a href="https://arxiv.org/abs/2407.03152", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -310,9 +350,9 @@
 								<span><font size="3"> Ce Liu*, Suryansh Kumar*, Shuhang Gu, Radu Timofte, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Luc Van Gool
 								</font></span>
 								<div><span><font size="3">International Conference on Machine Learning (<b>ICML</b>) 2024</font></span> <span>(<font size="4", color="#FF0000">Oral</font>)</span> </div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/gaussianpro.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>GaussianPro: 3D Gaussian Splatting with Progressive Propagation</b> 
 									[<a href="https://arxiv.org/abs/2402.14650", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -320,18 +360,18 @@
 								<span><font size="3"> Kai Cheng*, Xiaoxiao Long*, Kaizhi Yang, <b>Yao Yao</b>, Wei Yin, Yuexin Ma, Wenping Wang, Xuejin Chen<sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">International Conference on Machine Learning (<b>ICML</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/gaussian-flow.png" height="70" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle</b> 
 									[<a href="https://arxiv.org/abs/2312.03431", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://nju-3dv.github.io/projects/Gaussian-Flow/", style="color: rgb(0, 128, 255); text-decoration: none">project</a>] </font></div>
 								<span><font size="3"> Youtian Lin, Zuozhuo Dai, Siyu Zhu, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2024</font></span> <span>(<font size="4", color="#FF0000">Highlight</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/direct2.5.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Direct2.5: Diverse Text-to-3D Generation via Multi-view 2.5D Diffusion</b> 
 									[<a href="https://arxiv.org/abs/2311.15980", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -339,9 +379,9 @@
 								<span><font size="3"> Yuanxun Lu, Jingyang Zhang, Shiwei Li, Tian Fang, David McKinnon, Yanghai Tsin, Long Quan, Xun Cao, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry" data-featured="true"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/consistent4d.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Consistent4D: Consistent 360 Dynamic Object Generation from Monocular Video</b> 
 									[<a href="https://arxiv.org/abs/2311.02848", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -349,9 +389,9 @@
 								<span><font size="3"> Yanqin Jiang, Li Zhang, Jin Gao, Weiming Hu, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">International Conference on Learning Representations (<b>ICLR</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/jointnet.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>JointNet: Extending Text-to-Image Diffusion for Dense Distribution Modeling</b> 
 									[<a href="https://arxiv.org/abs/2310.06347", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -359,12 +399,12 @@
 								<span><font size="3"> Jingyang Zhang, Shiwei Li, Yuanxun Lu, Tian Fang, David McKinnon, Yanghai Tsin, Long Quan, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>
 								</font></span>
 								<div><span><font size="3">International Conference on Learning Representations (<b>ICLR</b>) 2024</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
 
-							<font size="4">2023</font><br/><br/>
+							<font size="4" class="pub-year">2023</font><br/><br/>
 							
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/neilf_pp.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>NeILF++: Inter-Reflectable Light Fields for Geometry and Material Estimation</b> 
 									[<a href="https://arxiv.org/abs/2303.17147", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -372,9 +412,9 @@
 								<span><font size="3">Jingyang Zhang, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Shiwei Li, Jingbo Liu, Tian Fang, David McKinnon, Yanghai Tsin, Long Quan
 								</font></span>
 								<div><span><font size="3">International Conference on Computer Vision (<b>ICCV</b>) 2023</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/aa-nerf.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Anti-Aliased Neural Implicit Surfaces with Encoding Level of Detail</b> 
 									[<a href="https://arxiv.org/abs/2309.10336", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -382,9 +422,9 @@
 								<span><font size="3"> Yiyu Zhuang, Qi Zhang, Ying Feng, Hao Zhu, <b>Yao Yao</b>, Xiaoyu Li, Yan-Pei Cao, Ying Shan, Xun Cao
 								</font></span>
 								<div><span><font size="3"><b>Siggraph Asia</b> 2023</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 							
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/animateanything.png" height="100" width="180" loading="lazy"></div>
 								<div><font size="3"><b>AnimateAnything: Fine-Grained Open Domain Image Animation with Motion Guidance</b> 
 									[<a href="https://arxiv.org/abs/2311.12886", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -392,9 +432,9 @@
 								<span><font size="3"> Zuozhuo Dai, Zhenghao Zhang, <b>Yao Yao</b>, Bingxue Qiu, Siyu Zhu, Long Qin, Weizhi Wang
 								</font></span>
 								<div><span><font size="3">arXiv 2311.12886</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/avatarbooth.png" height="85" width="180" loading="lazy"></div>
 								<div><font size="3"><b>AvatarBooth: High-Quality and Customizable 3D Human Avatar Generation</b> 
 									[<a href="https://arxiv.org/abs/2306.09864", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -405,18 +445,18 @@
 							</div><br/><br/>
 
 							
-							<font size="4">2022</font><br/><br/>
+							<font size="4" class="pub-year">2022</font><br/><br/>
 
-							<div>
+							<div class="pub-entry" data-featured="true"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/vis-mvsnet-ijcv.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Vis-MVSNet: Visibility-Aware Multi-view Stereo Network</b> 
 									[<a href="https://link.springer.com/article/10.1007/s11263-022-01697-3", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/jzhangbs/Vis-MVSNet", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] </font></div>
 								<span><font size="3">Jingyang Zhang, Shiwei Li, Zixin Luo, Tian Fang, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup> </font></span>
 								<div><span><font size="3">International Journal of Computer Vision (<b>IJCV</b>) 2022</font></span>  <span>(<font size="4", color="#FF0000">invited paper</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry" data-featured="true"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/neilf.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>NeILF: Neural Incident Light Field for Physically-based Material Estimation</b> 
 									[<a href="https://arxiv.org/pdf/2203.07182.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -424,118 +464,118 @@
 									[<a href="https://apple.ent.box.com/s/epkd7hamlpd7ltrsy4fyilzci19rz84r", style="color: rgb(0, 128, 255); text-decoration: none">data</a>] </font></div>
 								<span><font size="3"><b>Yao Yao</b>, Jingyang Zhang, Jingbo Liu, Yihang Qu, Tian Fang, David McKinnon, Yanghai Tsin, Long Quan</font></span>
 								<div><span><font size="3">European Conference on Computer Vision (<b>ECCV</b>) 2022</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/regsdf.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Critical Regularizations for Neural Surface Reconstruction in the Wild</b> 
 									[<a href="papers/zhang2021regsdf.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>] </font></div>
 								<span><font size="3">Jingyang Zhang, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Shiwei Li, Tian Fang, David McKinnon, Yanghai Tsin, Long Quan</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2022</font></span> <span></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
 							
-							<font size="4">2021</font><br/><br/>
+							<font size="4" class="pub-year">2021</font><br/><br/>
 
-							<div>
+							<div class="pub-entry" data-featured="true"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/mvsdf.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Learning Signed Distance Field for Multi-view Surface Reconstruction</b> 
 									[<a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Zhang_Learning_Signed_Distance_Field_for_Multi-View_Surface_Reconstruction_ICCV_2021_paper.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/jzhangbs/MVSDF", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] </font></div>
 								<span><font size="3">Jingyang Zhang, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Long Quan</font></span>
 								<div><span><font size="3">International Conference on Computer Vision (<b>ICCV</b>) 2021</font></span> <span>(<font size="4", color="#FF0000">Oral</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 							
 
-							<font size="4">2020</font><br/><br/>
+							<font size="4" class="pub-year">2020</font><br/><br/>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/vis-mvsnet.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Visibility-aware Multi-view Stereo Network</b> 
 									[<a href="https://arxiv.org/pdf/2008.07928.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/jzhangbs/Vis-MVSNet", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] </font></div>
 								<span><font size="3">Jingyang Zhang, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Shiwei Li, Zixin Luo, Tian Fang</font></span>
 								<div><span><font size="3">British Machine Vision Conference (<b>BMVC</b>) 2020 </font></span> <span>(<font size="4", color="#FF0000">Oral</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/dsm.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Learning Stereo Matchability in Disparity Regression Networks</b> 
 									[<a href="https://arxiv.org/pdf/2008.04800.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/jzhangbs/DSM", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] </font></div>
 								<span><font size="3">Jingyang Zhang, <b>Yao Yao</b><sup><span style="font-family:Wingdings">*</span></sup>, Zixin Luo, Shiwei Li, Tianwei Shen, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">International Conference on Pattern Recognition (<b>ICPR</b>) 2020</font></span> <span>(<font size="4", color="#FF0000">Best Student Paper Award</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/blendedmvs.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>BlendedMVS: A Large-scale Dataset for Generalized Multi-view Stereo Networks</b> 
 									[<a href="https://arxiv.org/pdf/1911.10127.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/YoYo000/BlendedMVS", style="color: rgb(0, 128, 255); text-decoration: none">dataset</a>] </font></div>
 								<span><font size="3"><b>Yao Yao</b>, Zixin Luo, Shiwei Li, Jingyang Zhang, Yufan Ren, Lei Zhou, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2020 </font></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/aslfeat.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>ASLFeat: Learning Local Features of Accurate Shape and Localization</b> 
 									[<a href="https://arxiv.org/pdf/2003.10071.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/lzx551402/ASLFeat", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] </font></div>
 								<span><font size="3">Zixin Luo, Lei Zhou, Xuyang Bai, Hongkai Chen, Jiahui Zhang, <b>Yao Yao</b>, Shiwei Li, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2020</font></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/kfnet.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Learning Temporal Camera Relocalization using Kalman Filtering</b> 
 									[<a href="https://arxiv.org/pdf/2003.10629.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/zlthinker/KFNet", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] </font></div>
 								<span><font size="3">Lei Zhou, Zixin Luo, Tianwei Shen, Jiahui Zhang, Mingmin Zhen, <b>Yao Yao</b>, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2020</font></span> <span>(<font size="4", color="#FF0000">Oral</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
 
-							<font size="4">2019</font><br/><br/>
+							<font size="4" class="pub-year">2019</font><br/><br/>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/jointposedepth.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Self-Supervised Learning of Depth and Motion Under Photometric Inconsistency</b> 
 									[<a href="https://arxiv.org/pdf/1909.09115.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/hlzz/DeepMatchVO", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] </font></div>
 								<span><font size="3">Tianwei Shen, Lei Zhou, Zixin Luo, <b>Yao Yao</b>, Shiwei Li, Jiahui Zhang, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3"> International Conference on Computer Vision Workshops (<b>ICCVW</b>) 2019</font></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/R-MVSNet.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Recurrent MVSNet for High-resolution Multi-view Stereo Depth Inference</b> 
 									[<a href="https://arxiv.org/pdf/1902.10556.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/YoYo000/MVSNet", style="color: rgb(0, 128, 255); text-decoration: none">code</a>] </font></div>
 								<span><font size="3"><b>Yao Yao</b>, Zixin Luo, Shiwei Li, Tianwei Shen, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2019 </font></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/texconv.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Cross-atlas Convolution for Parameterization Invariant Learning on Textured Mesh Surface</b> 
 									[<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_Cross-Atlas_Convolution_for_Parameterization_Invariant_Learning_on_Textured_Mesh_Surface_CVPR_2019_paper.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]</font></div>
 								<span><font size="3">Shiwei Li, Zixin Luo, Mingmin Zhen, <b>Yao Yao</b>, Tianwei Shen, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2019 </font></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/crossmodality.png" height="90" width="180" loading="lazy"></div>
 								<div><font size="3"><b>ContextDesc: Local Descriptor Augmentation with Cross-Modality Context</b> 
 									[<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Luo_ContextDesc_Local_Descriptor_Augmentation_With_Cross-Modality_Context_CVPR_2019_paper.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/lzx551402/contextdesc", style="color: rgb(0, 128, 255); text-decoration: none">code</a>]</font></div>
 								<span><font size="3">Zixin Luo, Tianwei Shen, Lei Zhou, Jiahui Zhang, <b>Yao Yao</b>, Shiwei Li, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">Computer Vision and Pattern Recognition (<b>CVPR</b>) 2019</font></span> <span>(<font size="4", color="#FF0000">Oral</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
 							
-							<font size="4">2018</font><br/><br/>
+							<font size="4" class="pub-year">2018</font><br/><br/>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/mvsnet.jpg" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>MVSNet: Depth Inference for Unstructured Multi-view Stereo</b> 
 									[<a href="papers/yao2018mvsnet.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -543,18 +583,18 @@
 									[<a href="https://github.com/YoYo000/MVSNet", style="color: rgb(0, 128, 255); text-decoration: none">code</a>]</font></div>
 								<span><font size="3"><b>Yao Yao</b>, Zixin Luo, Shiwei Li, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">European Conference on Computer Vision (<b>ECCV</b>) 2018</font></span> <span>(<font size="4", color="#FF0000">Oral</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/geodesc.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>GeoDesc: Learning Local Descriptors by Integrating Geometry Constraints</b> 
 									[<a href="https://arxiv.org/abs/1807.06294", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
 									[<a href="https://github.com/lzx551402/geodesc", style="color: rgb(0, 128, 255); text-decoration: none">code</a>]</font></div>
 								<span><font size="3">Zixin Luo, Tianwei Shen, Lei Zhou, Siyu Zhu, Runze Zhang, <b>Yao Yao</b>, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">European Conference on Computer Vision (<b>ECCV</b>) 2018</font></span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/thin.png" height="80" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Reconstructing Thin Structures of Manifold Surfaces by Integrating Spatial Curves</b> 
 									[<a href="papers/shiwei2018reconstructing.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]
@@ -564,26 +604,26 @@
 							</div><br/><br/>
 
 							
-							<font size="4">2017</font><br/><br/>
+							<font size="4" class="pub-year">2017</font><br/><br/>
 
-							<div>
+							<div class="pub-entry" data-featured="true"><div class="pub-item" data-featured="true">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/rcr.jpg" height="85" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Reletive Camera Refinement for Accurate Dense Reconstruction</b> 
 									[<a href="papers/yao2017relative.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]</b><font></div>
 								<span><font size="3"><b>Yao Yao</b>, Shiwei Li, Siyu Zhu, Hanyu Deng, Tian Fang, Long Quan</font></span>
 								<div><span><font size="3">International Conference on 3D Vision (<b>3DV</b>) 2017</font></span> <span>(<font size="4", color="#FF0000">Spotlight Oral</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
 							
-							<font size="4">2014</font><br/><br/>
+							<font size="4" class="pub-year">2014</font><br/><br/>
 
-							<div>
+							<div class="pub-entry"><div class="pub-item">
 								<div style="display:inline;float:left;margin:5px 10px 0px 0px"><img src="images/teasers/revised.jpg" height="85" width="180" loading="lazy"></div>
 								<div><font size="3"><b>Revised depth map estimation for multi-view stereo</b> 
 									[<a href="papers/yao2014revised.pdf", style="color: rgb(0, 128, 255); text-decoration: none">paper</a>]</b><font></div>
 								<span><font size="3"><b>Yao Yao</b>, Hao Zhu, Yongming Nie, Xiaoli Ji, Xun Cao</font></span>
 								<div><span><font size="3">International Conference on 3D Imaging (<b>IC3D</b>) 2014</font></span> <span>(<font size="4", color="#FF0000">Oral</font>)</span></div>
-							</div><br/><br/>
+							</div><br/><br/></div>
 
 						</section>
 					</div>
@@ -591,6 +631,73 @@
 				</div>
 			</div>
 		</div>
+		
+		<script>
+		(function() {
+			function init() {
+			var filterBtns = document.querySelectorAll('.pub-filter-link');
+			var pubEntries = document.querySelectorAll('.pub-entry');
+			var pubYears = document.querySelectorAll('.pub-year');
+			
+			function updateYearVisibility() {
+				var showFeatured = document.querySelector('.pub-filter-link[data-filter="featured"]').classList.contains('active');
+				var parent = document.getElementById('pub-list') || (pubEntries[0] && pubEntries[0].closest('section'));
+				if (!parent) return;
+				var ordered = parent.querySelectorAll('.pub-year, .pub-entry');
+				var currentYear = null;
+				var hasVisible = false;
+				for (var i = 0; i < ordered.length; i++) {
+					var el = ordered[i];
+					if (el.classList.contains('pub-year')) {
+						if (currentYear) currentYear.classList.toggle('hidden', !hasVisible);
+						currentYear = el;
+						hasVisible = false;
+					} else if (el.classList.contains('pub-entry') && currentYear) {
+						var isFeatured = (el.getAttribute('data-featured') === 'true') || (el.querySelector('[data-featured="true"]') !== null);
+						var isHidden = el.classList.contains('hidden');
+						if (showFeatured) {
+							if (isFeatured && !isHidden) hasVisible = true;
+						} else {
+							if (!isHidden) hasVisible = true;
+						}
+					}
+				}
+				if (currentYear) currentYear.classList.toggle('hidden', !hasVisible);
+			}
+			
+			function applyFilter(filter) {
+				filterBtns.forEach(function(btn) {
+					btn.classList.toggle('active', btn.getAttribute('data-filter') === filter);
+				});
+				pubEntries.forEach(function(entry) {
+					var isFeatured = (entry.getAttribute('data-featured') === 'true') || (entry.querySelector('[data-featured="true"]') !== null);
+					if (filter === 'all') {
+						entry.classList.remove('hidden');
+					} else {
+						entry.classList.toggle('hidden', !isFeatured);
+					}
+				});
+				updateYearVisibility();
+			}
+			
+			filterBtns.forEach(function(btn) {
+				btn.addEventListener('click', function(e) {
+					e.preventDefault();
+					applyFilter(btn.getAttribute('data-filter'));
+				});
+			});
+			applyFilter('featured');
+			}
+			function run() {
+				if (document.readyState === 'loading') {
+					document.addEventListener('DOMContentLoaded', function() { setTimeout(init, 50); });
+				} else {
+					setTimeout(init, 50);
+				}
+			}
+			run();
+		})();
+		</script>
 		
 	</body>
 </html>
